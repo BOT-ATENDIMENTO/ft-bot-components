@@ -1,46 +1,126 @@
-# Getting Started with Create React App
+# Projeto de Componentes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Versão:** 0.0.2
 
-## Available Scripts
+Este projeto é uma biblioteca de componentes reutilizáveis para aplicações React. Utiliza **Storybook** para desenvolvimento e teste isolado dos componentes, **Webpack** para empacotamento dos módulos e **Vite** para um servidor de desenvolvimento rápido.
 
-In the project directory, you can run:
+## Sumário
 
-### `npm start`
+- [Visão Geral](#visão-geral)
+- [Configuração do Projeto](#configuração-do-projeto)
+- [Scripts Disponíveis](#scripts-disponíveis)
+- [Uso do Storybook](#uso-do-storybook)
+- [Uso do Webpack](#uso-do-webpack)
+- [Uso do Vite](#uso-do-vite)
+- [Dependências](#dependências)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Visão Geral
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Este projeto visa criar e gerenciar uma coleção de componentes React reutilizáveis. O **Storybook** permite visualizar e testar os componentes de forma isolada, enquanto o **Webpack** e o **Vite** oferecem suporte para desenvolvimento e empacotamento.
 
-### `npm test`
+## Configuração do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para configurar o projeto, siga as instruções abaixo:
 
-### `npm run build`
+### Como Instalar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone este repositório:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navegue até o diretório do projeto:
 
-### `npm run eject`
+   ```bash
+   cd seu-repositorio
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Instale as dependências do projeto:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Se necessário, instale as dependências de tipo específicas para Node.js:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   npm install @types/node@latest
+   ```
 
-## Learn More
+5. Caso enfrente problemas de dependências, você pode usar o seguinte comando:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Como Rodar o Projeto com Webpack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Para iniciar o servidor de desenvolvimento com Webpack, use:
+
+   ```bash
+   npm run start:webpack
+   ```
+
+2. Para gerar um build de produção, use:
+   ```bash
+   npm run build:webpack
+   ```
+
+### Como Rodar o Storybook
+
+1. Para iniciar o Storybook, use:
+
+   ```bash
+   npm run storybook
+   ```
+
+2. O Storybook será iniciado em `http://localhost:6006` por padrão.
+
+### Como Rodar o Vite
+
+1. Para iniciar o servidor de desenvolvimento com Vite, use:
+
+   ```bash
+   npm run dev:vite
+   ```
+
+2. Para gerar um build de produção com Vite, use:
+   ```bash
+   npm run build:vite
+   ```
+
+## Scripts Disponíveis
+
+- `npm run start:webpack`: Inicia o servidor de desenvolvimento com Webpack.
+- `npm run build:webpack`: Gera o build de produção com Webpack.
+- `npm run storybook`: Inicia o Storybook para visualização e teste dos componentes.
+- `npm run dev:vite`: Inicia o servidor de desenvolvimento com Vite.
+- `npm run build:vite`: Gera o build de produção com Vite.
+
+## Dependências
+
+- **React**: Biblioteca principal para construção de componentes.
+- **Storybook**: Ferramenta para desenvolvimento e teste isolado de componentes.
+- **Webpack**: Empacotador de módulos para o projeto.
+- **Vite**: Ferramenta de desenvolvimento rápido e empacotamento.
+
+## Contribuição
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature ou correção de bug:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Faça commit das suas alterações:
+   ```bash
+   git commit -am 'Adiciona uma nova feature'
+   ```
+4. Envie para o repositório remoto:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um pull request.
