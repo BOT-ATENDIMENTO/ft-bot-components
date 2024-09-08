@@ -21,7 +21,7 @@ export const Input: Story = {
     />
   ),
   args: {
-    placeholder: "Email",
+    placeholder: "E-mail",
     label: "E-mail",
     startAdornment: <FaUser />,
   },

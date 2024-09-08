@@ -97,7 +97,7 @@ Para configurar o projeto, siga as instruções abaixo:
 - `npm run build:webpack`: Gera o build de produção com Webpack.
 - `npm run storybook`: Inicia o Storybook para visualização e teste dos componentes.
 - `npm run dev:vite`: Inicia o servidor de desenvolvimento com Vite.
-- `npm run build:vite`: Gera o build de produção com Vite (opcional).
+- `npm run build:vite`: Gera o build de produção com Vite.
 
 ## Dependências
 
