@@ -1,8 +1,6 @@
-import { FormEvent, useState, useContext } from "react";
+import { useState } from "react";
 import Modal from "react-modal";
 import { Button, ButtonTransaction, Form } from "./NewModal";
-
-import React from "react";
 
 interface NewtransactionProps {
   isOpen: boolean;
